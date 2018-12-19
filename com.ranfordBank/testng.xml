@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="com.pagelibrary.com.ranfordBank.TestExecution">
+      <methods>
+          <include name="verifyLaunch()"></include>
+          <include name="verifyLogin()"></include>
+          <include name="verifyLaunchAdminPage()"></include>
+          <include name="verifyNewBranchCreation()"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+  <test thread-count="5" name="Test2">
+    <classes>
+      <class name="com.pagelibrary.com.ranfordBank.TestExecution"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

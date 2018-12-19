@@ -60,18 +60,18 @@ public class TestExecution extends TestCaseRepository{
 		ExcelClass.saveWorkbook();*/
 		
 		String str[] = new String[ExcelClass.columnCount()];
-		int col = 0;
+		int col2 = 0;
 		for (int row=0; row < ExcelClass.rowCount(); row++)
 		{
-			for (col=0; col < ExcelClass.columnCount(); col++)
+			for (col2=0; col2 < ExcelClass.columnCount(); col2++)
 			{
-				 str[col] = ExcelClass.readData(col, row);
-				 System.out.print(str[col]+" ");
+				 str[col2] = ExcelClass.readData(col2, row);
+				 System.out.print(str[col2]+" ");
 			}
 			System.out.println();
 			//launchNewBranchCreationPage();
 			String staus = newBranchCreation(str);
-			ExcelClass.writeData(col, row, staus);
+			ExcelClass.writeData(col2, row, staus);
 		}
 		ExcelClass.saveWorkbook();
 	}
